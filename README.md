@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/2b01e157-5314-4e11-8580-52b41524a374
+**URL**: [https://lovable.dev/projects/2b01e157-5314-4e11-8580-52b41524a374](https://chatlink-nexus-ui.lovable.app/)
 
 ## How can I edit this code?
 
