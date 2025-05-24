@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,38 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				chatlink: {
+					dark: '#0f1419',
+					blue: {
+						50: '#e6f3ff',
+						100: '#b3d9ff',
+						200: '#80bfff',
+						300: '#4da6ff',
+						400: '#1a8cff',
+						500: '#0066cc',
+						600: '#0052a3',
+						700: '#003d7a',
+						800: '#002952',
+						900: '#001429'
+					},
+					green: {
+						50: '#e6fff2',
+						100: '#b3ffdb',
+						200: '#80ffc4',
+						300: '#4dffad',
+						400: '#1aff96',
+						500: '#00cc66',
+						600: '#00a352',
+						700: '#007a3d',
+						800: '#005229',
+						900: '#002914'
+					},
+					cyber: {
+						primary: '#00d9ff',
+						secondary: '#00ff88',
+						accent: '#ff0080'
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +117,56 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-right': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(50px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px theme(colors.chatlink.cyber.primary), 0 0 20px theme(colors.chatlink.cyber.primary), 0 0 35px theme(colors.chatlink.cyber.primary)'
+					},
+					'50%': {
+						boxShadow: '0 0 10px theme(colors.chatlink.cyber.primary), 0 0 40px theme(colors.chatlink.cyber.primary), 0 0 60px theme(colors.chatlink.cyber.primary)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-right': 'slide-in-right 0.8s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-cyber': 'linear-gradient(135deg, #001429 0%, #002952 25%, #0052a3 50%, #002914 75%, #005229 100%)',
+				'gradient-hero': 'linear-gradient(135deg, #0f1419 0%, #001429 30%, #002914 70%, #0f1419 100%)',
+				'gradient-card': 'linear-gradient(145deg, rgba(0, 20, 41, 0.8) 0%, rgba(0, 41, 82, 0.4) 50%, rgba(0, 82, 41, 0.6) 100%)'
 			}
 		}
 	},
