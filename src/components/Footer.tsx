@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { MessageCircle, Mail, Phone, MapPin, Shield } from 'lucide-react';
+import { MessageCircle, Mail, Phone, MapPin, Shield, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,6 +27,22 @@ const Footer = () => {
               <div className="w-10 h-10 bg-chatlink-green-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
                 <Mail className="w-5 h-5 text-chatlink-cyber-secondary" />
               </div>
+              <a 
+                href="https://linkedin.com/company/fiostech" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-chatlink-blue-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer"
+              >
+                <Linkedin className="w-5 h-5 text-chatlink-cyber-primary" />
+              </a>
+              <a 
+                href="https://instagram.com/fiostech" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-chatlink-green-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer"
+              >
+                <Instagram className="w-5 h-5 text-chatlink-cyber-secondary" />
+              </a>
             </div>
           </div>
 
@@ -43,8 +60,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#integrations" className="text-white/70 hover:text-chatlink-cyber-primary transition-colors">
-                  Integrações
+                <a href="#testimonials" className="text-white/70 hover:text-chatlink-cyber-primary transition-colors">
+                  Clientes
                 </a>
               </li>
               <li>
@@ -102,9 +119,9 @@ const Footer = () => {
               </div>
 
               <div className="bg-gradient-card rounded-lg p-4 glass-effect neon-border">
-                <p className="text-white font-semibold mb-2">Teste Gratuito</p>
+                <p className="text-white font-semibold mb-2">Fale Conosco</p>
                 <p className="text-white/70 text-sm">
-                  Entre em contato via WhatsApp e solicite seu acesso gratuito por 14 dias.
+                  Entre em contato via WhatsApp para conhecer nossas soluções personalizadas.
                 </p>
               </div>
             </div>

@@ -23,17 +23,21 @@ const CtaSection = () => {
                 </h2>
                 
                 <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                  Teste o ChatLink hoje mesmo e experimente a diferença que uma comunicação 
-                  centralizada e eficiente pode fazer para o seu negócio.
+                  Entre em contato conosco e descubra como o ChatLink pode transformar 
+                  a comunicação da sua empresa com soluções personalizadas.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-xl px-12 py-6 hover-glow animate-pulse-glow group"
+                  className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-xl px-12 py-6 hover-glow group"
+                  style={{ 
+                    boxShadow: '0 0 15px rgba(0, 217, 255, 0.3)' 
+                  }}
+                  onClick={() => window.open('https://app.chatlink.com', '_blank')}
                 >
-                  Começar Teste Gratuito
+                  Conhecer Soluções
                   <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
                 
@@ -41,8 +45,9 @@ const CtaSection = () => {
                   size="lg" 
                   variant="outline" 
                   className="neon-border bg-transparent text-chatlink-cyber-primary font-bold text-xl px-12 py-6 hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
+                  onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
                 >
-                  Agendar Demonstração
+                  Falar no WhatsApp
                 </Button>
               </div>
 
@@ -81,11 +86,11 @@ const CtaSection = () => {
               <div className="flex items-center justify-center space-x-8 pt-6">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-chatlink-cyber-secondary rounded-full animate-pulse"></div>
-                  <span className="text-white/70 text-sm">Teste grátis por 14 dias</span>
+                  <span className="text-white/70 text-sm">Soluções personalizadas</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-chatlink-cyber-primary rounded-full animate-pulse"></div>
-                  <span className="text-white/70 text-sm">Cancelamento a qualquer momento</span>
+                  <span className="text-white/70 text-sm">Consultoria especializada</span>
                 </div>
               </div>
             </div>
