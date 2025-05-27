@@ -29,26 +29,28 @@ const CtaSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-xl px-12 py-6 hover-glow group"
-                  style={{ 
-                    boxShadow: '0 0 15px rgba(0, 217, 255, 0.3)' 
-                  }}
-                  onClick={() => window.open('https://app.chatlink.com', '_blank')}
-                >
-                  Conhecer Soluções
-                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="neon-border bg-transparent text-chatlink-cyber-primary font-bold text-xl px-12 py-6 hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
-                  onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
-                >
-                  Falar no WhatsApp
-                </Button>
+                <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-xl px-12 py-6 hover-glow group"
+                    style={{ 
+                      boxShadow: '0 0 15px rgba(0, 217, 255, 0.3)' 
+                    }}                    
+                  >
+                    Conhecer Soluções
+                    <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </a>
+                <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="neon-border bg-transparent text-chatlink-cyber-primary font-bold text-xl px-12 py-6 hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
+                    
+                  >
+                    Falar no WhatsApp
+                  </Button>
+                </a>
               </div>
 
               <div className="grid md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">

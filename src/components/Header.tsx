@@ -9,13 +9,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/placeholder.svg" 
+              src="https://media.licdn.com/dms/image/v2/D4D0BAQGHYoqE3PEUdw/company-logo_200_200/company-logo_200_200/0/1716215580968/fiostecnologia_logo?e=2147483647&v=beta&t=LZwPJOX0KiZFua0smUIyuSrqR7B_DHNY5lsZPuTX2DY"
               alt="ChatLink Logo" 
               className="w-8 h-8 rounded-lg"
-            />
-            <div className="w-8 h-8 bg-gradient-to-br from-chatlink-cyber-primary to-chatlink-cyber-secondary rounded-lg flex items-center justify-center">
-              <span className="text-chatlink-dark font-bold text-lg">C</span>
-            </div>
+            />            
             <span className="text-2xl font-bold text-gradient">ChatLink</span>
           </div>
           
@@ -26,7 +23,7 @@ const Header = () => {
             <a href="#features" className="text-white/80 hover:text-chatlink-cyber-primary transition-colors">
               Funcionalidades
             </a>
-            <a href="#testimonials" className="text-white/80 hover:text-chatlink-cyber-primary transition-colors">
+            <a href="#TestimonialsSection" className="text-white/80 hover:text-chatlink-cyber-primary transition-colors">
               Clientes
             </a>
             <a href="#contact" className="text-white/80 hover:text-chatlink-cyber-primary transition-colors">
@@ -35,19 +32,21 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button 
-              variant="outline" 
-              className="neon-border bg-transparent text-chatlink-cyber-primary hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
-              onClick={() => window.open('https://app.chatlink.com', '_blank')}
-            >
-              Acessar App
-            </Button>
-            <Button 
-              className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-semibold hover-glow"
-              onClick={() => window.open('https://app.chatlink.com', '_blank')}
-            >
-              Entre em Contato
-            </Button>
+            <a href="https://chatlink.fios.com.br" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                className="neon-border bg-transparent text-chatlink-cyber-primary hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"                
+              >
+                Acessar Web
+              </Button>
+            </a>
+            <a href="https://wa.me/9220201234"  target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-semibold hover-glow"                
+              >
+                Entre em Contato
+              </Button>
+            </a>
           </div>
         </div>
       </div>

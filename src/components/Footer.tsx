@@ -20,15 +20,21 @@ const Footer = () => {
               Desenvolvido pela FIOS Tecnologia com foco em inovação e resultados.
             </p>
             
-            <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-chatlink-blue-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
-                <MessageCircle className="w-5 h-5 text-chatlink-cyber-primary" />
-              </div>
-              <div className="w-10 h-10 bg-chatlink-green-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
-                <Mail className="w-5 h-5 text-chatlink-cyber-secondary" />
-              </div>
+            <div className="flex space-x-4">            
+              <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                <div className="w-10 h-10 bg-chatlink-blue-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
+                  <MessageCircle className="w-5 h-5 text-chatlink-cyber-primary" />
+                </div>
+              </a>
+
+              <a href="mailto:comercial@fios.net.br" target="_blank" rel="noopener noreferrer">
+                <div className="w-10 h-10 bg-chatlink-green-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
+                  <Mail className="w-5 h-5 text-chatlink-cyber-secondary" />
+                </div>
+              </a>
+
               <a 
-                href="https://linkedin.com/company/fiostech" 
+                href="https://www.linkedin.com/company/fiostecnologia/posts/?feedView=all" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-chatlink-blue-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer"
@@ -36,7 +42,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5 text-chatlink-cyber-primary" />
               </a>
               <a 
-                href="https://instagram.com/fiostech" 
+                href="https://www.instagram.com/fiostecnologia?igsh=dXUzN2lkdHZuMWQ=" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-chatlink-green-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer"
@@ -97,10 +103,10 @@ const Footer = () => {
                 <div>
                   <p className="text-white/70 text-sm">WhatsApp</p>
                   <a 
-                    href="https://wa.me/5511999999999" 
+                    href="https://wa.me/9220201234" target='_blank' 
                     className="text-chatlink-cyber-primary font-semibold hover:text-chatlink-cyber-secondary transition-colors"
                   >
-                    (11) 99999-9999
+                    (55) 92 2020-1234
                   </a>
                 </div>
               </div>
@@ -110,10 +116,10 @@ const Footer = () => {
                 <div>
                   <p className="text-white/70 text-sm">Email</p>
                   <a 
-                    href="mailto:contato@fiostech.com.br" 
+                    href="mailto:comercial@fios.net.br" 
                     className="text-chatlink-cyber-secondary font-semibold hover:text-chatlink-cyber-primary transition-colors"
                   >
-                    contato@fiostech.com.br
+                    comercial@fios.net.br
                   </a>
                 </div>
               </div>

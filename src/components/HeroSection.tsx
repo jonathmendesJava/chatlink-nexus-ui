@@ -32,21 +32,21 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-lg px-8 py-4 hover-glow animate-pulse-glow"
               >
-                Comece Agora
+                <a href="https://wa.me/9220201234" target='_Blank'>Comece Agora</a>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="neon-border bg-transparent text-chatlink-cyber-primary font-semibold text-lg px-8 py-4 hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
               >
-                Solicite Demonstração
+               <a href="https://wa.me/9220201234" target='_Blank' rel="noopener noreferrer">Solicite Demonstração</a> 
               </Button>
             </div>
 
             <div className="flex items-center space-x-8 pt-4">
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-chatlink-cyber-secondary rounded-full animate-pulse"></div>
-                <span className="text-white/60">100% Gratuito para testar</span>
+                <span className="text-white/60">Via WhatsApp</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-chatlink-cyber-primary rounded-full animate-pulse"></div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 <div className="bg-chatlink-blue-800/30 rounded-xl p-4 hover-glow cursor-pointer transition-all duration-300 animate-float">
                   <MessageCircle className="w-8 h-8 text-chatlink-cyber-primary mb-3" />
                   <h3 className="font-semibold text-white mb-2">WhatsApp</h3>
-                  <p className="text-sm text-white/60">Business & Pessoal</p>
+                  <p className="text-sm text-white/60">Business</p>
                 </div>
                 <div className="bg-chatlink-green-800/30 rounded-xl p-4 hover-glow cursor-pointer transition-all duration-300 animate-float" style={{animationDelay: '0.5s'}}>
                   <Users className="w-8 h-8 text-chatlink-cyber-secondary mb-3" />

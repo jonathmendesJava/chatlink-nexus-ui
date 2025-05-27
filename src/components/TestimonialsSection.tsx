@@ -99,12 +99,16 @@ const TestimonialsSection = () => {
               Junte-se a centenas de empresas que já transformaram seu atendimento com o ChatLink.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold px-6 py-3 rounded-lg hover-glow transition-all duration-300">
-                Começar Agora
-              </button>
-              <button className="neon-border bg-transparent text-chatlink-cyber-primary font-semibold px-6 py-3 rounded-lg hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300">
-                Ver Mais Casos
-              </button>
+              <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                <button className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold px-6 py-3 rounded-lg hover-glow transition-all duration-300">
+                  Começar Agora
+                </button>
+              </a>
+              <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                <button className="neon-border bg-transparent text-chatlink-cyber-primary font-semibold px-6 py-3 rounded-lg hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300">
+                  Ver Mais Casos
+                </button>
+              </a>
             </div>
           </div>
         </div>
