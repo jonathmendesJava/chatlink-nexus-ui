@@ -1,8 +1,22 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { Menu } from 'lucide-react';
 
 const Header = () => {
+  const handleNavClick = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-chatlink-cyber-primary/20">
       <div className="container mx-auto px-6 py-4">
@@ -16,6 +30,7 @@ const Header = () => {
             <span className="text-2xl font-bold text-gradient">ChatLink</span>
           </div>
           
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-white/80 hover:text-chatlink-cyber-primary transition-colors">
               Home
@@ -31,7 +46,8 @@ const Header = () => {
             </a>
           </nav>
 
-          <div className="flex items-center space-x-4">
+          {/* Desktop Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
             <a href="https://chatlink.fios.com.br" target="_blank" rel="noopener noreferrer">
               <Button 
                 variant="outline" 
@@ -40,13 +56,78 @@ const Header = () => {
                 Acessar Web
               </Button>
             </a>
-            <a href="https://wa.me/9220201234"  target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
               <Button 
                 className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-semibold hover-glow"                
               >
                 Entre em Contato
               </Button>
             </a>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="md:hidden">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className="text-white hover:text-chatlink-cyber-primary hover:bg-white/10"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                align="end" 
+                className="w-56 bg-chatlink-dark/95 border border-chatlink-cyber-primary/20 glass-effect backdrop-blur-md mt-2"
+              >
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('#home')}
+                  className="text-white hover:text-chatlink-cyber-primary hover:bg-white/10 cursor-pointer transition-colors"
+                >
+                  Home
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('#features')}
+                  className="text-white hover:text-chatlink-cyber-primary hover:bg-white/10 cursor-pointer transition-colors"
+                >
+                  Funcionalidades
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('#TestimonialsSection')}
+                  className="text-white hover:text-chatlink-cyber-primary hover:bg-white/10 cursor-pointer transition-colors"
+                >
+                  Clientes
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => handleNavClick('#contact')}
+                  className="text-white hover:text-chatlink-cyber-primary hover:bg-white/10 cursor-pointer transition-colors"
+                >
+                  Contato
+                </DropdownMenuItem>
+                <div className="border-t border-white/10 my-2"></div>
+                <DropdownMenuItem asChild>
+                  <a 
+                    href="https://chatlink.fios.com.br" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-chatlink-cyber-primary hover:text-chatlink-cyber-secondary hover:bg-white/10 cursor-pointer transition-colors font-medium"
+                  >
+                    Acessar Web
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a 
+                    href="https://wa.me/9220201234" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-chatlink-cyber-primary hover:text-chatlink-cyber-secondary hover:bg-white/10 cursor-pointer transition-colors font-medium"
+                  >
+                    Entre em Contato
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
