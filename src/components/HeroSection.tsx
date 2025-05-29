@@ -32,14 +32,14 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-lg px-8 py-4 hover-glow animate-pulse-glow"
               >
-                <a href="https://wa.me/9220201234" target='_Blank'>Comece Agora</a>
+                <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target='_Blank'>Comece Agora</a>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="neon-border bg-transparent text-chatlink-cyber-primary font-semibold text-lg px-8 py-4 hover:bg-chatlink-cyber-primary hover:text-chatlink-dark transition-all duration-300"
               >
-               <a href="https://wa.me/9220201234" target='_Blank' rel="noopener noreferrer">Solicite Demonstração</a> 
+               <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target='_Blank' rel="noopener noreferrer">Solicite Demonstração</a> 
               </Button>
             </div>
 

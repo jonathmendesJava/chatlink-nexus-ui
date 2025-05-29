@@ -95,7 +95,7 @@ const FeaturesSection = () => {
             <p className="text-white/80 mb-6">
               Experimente todas essas funcionalidades gratuitamente e veja a diferença na sua empresa.
             </p>
-            <a href="https://wa.me/9220201234" target='_blank' rel="noopener noreferrer">
+            <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target='_blank' rel="noopener noreferrer">
               <button className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold px-8 py-4 rounded-lg hover-glow transition-all duration-300 animate-pulse-glow">
                 Começar Teste
               </button>

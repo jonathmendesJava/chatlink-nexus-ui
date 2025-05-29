@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">            
-              <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
                 <div className="w-10 h-10 bg-chatlink-blue-800/30 rounded-lg flex items-center justify-center hover-glow cursor-pointer">
                   <MessageCircle className="w-5 h-5 text-chatlink-cyber-primary" />
                 </div>
@@ -103,7 +103,7 @@ const Footer = () => {
                 <div>
                   <p className="text-white/70 text-sm">WhatsApp</p>
                   <a 
-                    href="https://wa.me/9220201234" target='_blank' 
+                    href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target='_blank' 
                     className="text-chatlink-cyber-primary font-semibold hover:text-chatlink-cyber-secondary transition-colors"
                   >
                     (55) 92 2020-1234

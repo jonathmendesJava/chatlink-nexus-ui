@@ -56,7 +56,7 @@ const Header = () => {
                 Acessar Web
               </Button>
             </a>
-            <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
               <Button 
                 className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-semibold hover-glow"                
               >
@@ -118,7 +118,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a 
-                    href="https://wa.me/9220201234" 
+                    href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-chatlink-cyber-primary hover:text-chatlink-cyber-secondary hover:bg-white/10 cursor-pointer transition-colors font-medium"

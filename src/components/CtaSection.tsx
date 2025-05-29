@@ -29,7 +29,7 @@ const CtaSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary text-chatlink-dark font-bold text-xl px-12 py-6 hover-glow group"
@@ -41,7 +41,7 @@ const CtaSection = () => {
                     <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </a>
-                <a href="https://wa.me/9220201234" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/9220201234?text=Opa%2C%20tudo%20bem.%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="lg" 
                     variant="outline" 
