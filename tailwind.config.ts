@@ -68,6 +68,30 @@ export default {
 				},
 				chatlink: {
 					dark: '#0f1419',
+					purple: {
+						50: '#faf7ff',
+						100: '#f0e7ff',
+						200: '#e0d1ff',
+						300: '#c9b3ff',
+						400: '#a88fff',
+						500: '#7e50f5',
+						600: '#6b3ed9',
+						700: '#5a2fb8',
+						800: '#4a2696',
+						900: '#3d1e78'
+					},
+					mint: {
+						50: '#f0fffc',
+						100: '#ccfff4',
+						200: '#99ffea',
+						300: '#5cffe0',
+						400: '#1df692',
+						500: '#00e675',
+						600: '#00b85e',
+						700: '#00924d',
+						800: '#007340',
+						900: '#005e36'
+					},
 					blue: {
 						50: '#e6f3ff',
 						100: '#b3d9ff',
@@ -95,7 +119,9 @@ export default {
 					cyber: {
 						primary: '#00d9ff',
 						secondary: '#00ff88',
-						accent: '#ff0080'
+						accent: '#ff0080',
+						purple: '#7e50f5',
+						mint: '#1df692'
 					}
 				}
 			},
@@ -169,7 +195,9 @@ export default {
 			backgroundImage: {
 				'gradient-cyber': 'linear-gradient(135deg, #001429 0%, #002952 25%, #0052a3 50%, #002914 75%, #005229 100%)',
 				'gradient-hero': 'linear-gradient(135deg, #0f1419 0%, #001429 30%, #002914 70%, #0f1419 100%)',
-				'gradient-card': 'linear-gradient(145deg, rgba(0, 20, 41, 0.8) 0%, rgba(0, 41, 82, 0.4) 50%, rgba(0, 82, 41, 0.6) 100%)'
+				'gradient-card': 'linear-gradient(145deg, rgba(0, 20, 41, 0.8) 0%, rgba(0, 41, 82, 0.4) 50%, rgba(0, 82, 41, 0.6) 100%)',
+				'gradient-purple': 'linear-gradient(135deg, #7e50f5 0%, #1df692 100%)',
+				'gradient-harmonized': 'linear-gradient(135deg, #00d9ff 0%, #7e50f5 35%, #1df692 70%, #00ff88 100%)'
 			}
 		}
 	},

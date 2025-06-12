@@ -76,12 +76,30 @@
   }
 
   .neon-border {
-    @apply border border-chatlink-cyber-primary/50 shadow-lg;
-    box-shadow: 0 0 10px theme(colors.chatlink.cyber.primary / 0.3);
+    @apply border border-chatlink-cyber-primary/30 shadow-md;
+    box-shadow: 0 0 5px theme(colors.chatlink.cyber.primary / 0.15);
+  }
+
+  .neon-border-purple {
+    @apply border border-chatlink-purple-500/30 shadow-md;
+    box-shadow: 0 0 5px theme(colors.chatlink.purple.500 / 0.15);
+  }
+
+  .neon-border-mint {
+    @apply border border-chatlink-mint-400/30 shadow-md;
+    box-shadow: 0 0 5px theme(colors.chatlink.mint.400 / 0.15);
   }
 
   .text-gradient {
     @apply bg-gradient-to-r from-chatlink-cyber-primary to-chatlink-cyber-secondary bg-clip-text text-transparent font-ample font-bold;
+  }
+
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-chatlink-purple-500 to-chatlink-mint-400 bg-clip-text text-transparent font-ample font-bold;
+  }
+
+  .text-gradient-harmonized {
+    @apply bg-gradient-to-r from-chatlink-cyber-primary via-chatlink-purple-500 to-chatlink-mint-400 bg-clip-text text-transparent font-ample font-bold;
   }
 
   .hover-glow {
@@ -89,6 +107,14 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 20px theme(colors.chatlink.cyber.primary / 0.5);
+    box-shadow: 0 0 12px theme(colors.chatlink.cyber.primary / 0.25);
+  }
+
+  .hover-glow-purple:hover {
+    box-shadow: 0 0 12px theme(colors.chatlink.purple.500 / 0.25);
+  }
+
+  .hover-glow-mint:hover {
+    box-shadow: 0 0 12px theme(colors.chatlink.mint.400 / 0.25);
   }
 }
